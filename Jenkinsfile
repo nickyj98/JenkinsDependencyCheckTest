@@ -5,7 +5,7 @@ pipeline {
 			steps {
 				withCredentials([gitUsernamePassword(credentialsId: 'githubCreds', gitToolName: 'Default')]) {
     				git '/home/JenkinsDependencyCheckTest'
-}
+				}
 				
 			}
 		}
