@@ -7,7 +7,7 @@ pipeline {
 				git(
 				url:'https://github.com/nickyj98/JenkinsDependencyCheckTest.git',
        				credentialsId: 'githubCred',
-       				branch: 'main'
+       				branch: 'master'
 				)
 
 				
