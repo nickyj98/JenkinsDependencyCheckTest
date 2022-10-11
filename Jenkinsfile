@@ -3,7 +3,10 @@ pipeline {
 	stages {
 		stage('Checkout SCM') {
 			steps {
-				git '/home/JenkinsDependencyCheckTest'
+				withCredentials([gitUsernamePassword(credentialsId: 'githubCreds', gitToolName: 'Default')]) {
+    				git '/home/JenkinsDependencyCheckTest'
+}
+				
 			}
 		}
 
